@@ -1,0 +1,51 @@
+{
+  "name": "simple-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardIliasenco-ui/simple-webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardIliasenco-ui/simple-webpack/issues"
+  },
+  "homepage": "https://github.com/eduardIliasenco-ui/simple-webpack#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-regenerator": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "autoprefixer": "^9.7.6",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.3",
+    "dotenv": "^8.2.0",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.2.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-loader": "^3.0.0",
+    "regenerator-runtime": "^0.13.5",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie < 11",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ]
+}

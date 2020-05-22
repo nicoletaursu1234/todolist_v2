@@ -1,0 +1,129 @@
+.to-do__title
+  font: 24px/24px Arial, sans-serif
+  color: #8b8b8b
+  text-align: center
+
+  &:first-letter
+    color: indianred
+
+.to-do__list_item
+  position: relative
+  display: flex
+  align-items: center
+  padding: 8px 12px
+  border: 1px solid #cfcfcf
+  border-radius: 2px
+  box-sizing: border-box
+
+  &[data-done="1"]
+    margin-top: 40px
+
+    &::before
+      content: 'COMPLETE'
+      position: absolute
+      top: 0
+      left: 0
+      display: block
+      width: 100%
+      padding: 0
+      margin: auto
+      font: 14px Arial, sans-serif
+      font-weight: 500
+      color: #8b8b8b
+      text-align: center
+      transform: translateY(-150%)
+
+  &[data-done="1"] ~ &[data-done="1"]
+    margin-top: initial
+
+    &::before
+      content: none
+
+  &:not(:last-child)
+    margin-bottom: 15px
+
+  & > *:not(:last-child)
+    margin-right: 10px
+
+.to-do__item_checkmark, .to-do__item_remove
+  font-size: 18px
+  cursor: pointer
+  color: #418042
+
+  &.not_done
+    color: #a5a5a5
+
+.to-do__item_text
+  flex: 1
+
+.to-do__item_text, .to-do__item_date
+  font: 14px/16px Arial, sans-serif
+  color: #1f1213
+
+.to-do__item_date
+  font-size: 11px
+  color: #a5a5a5
+
+.to-do__item_remove
+  color: indianred
+
+.to-do__list
+  padding: 20px 0
+  margin: auto
+  display: block
+  width: 500px
+  box-sizing: border-box
+
+#to-do__add_form
+  max-width: 500px
+  margin: auto
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 0 32px
+  box-sizing: border-box
+
+  & > *:first-child
+    margin-right: 20px
+
+.to-do__edit
+  &_form
+    flex: 1
+    padding: 0
+    margin: 0
+
+  &_input, #add_field
+    outline: none
+    width: 100%
+    appearance: none
+    border: none
+    box-shadow: none
+    border-radius: 0
+    font: 14px/16px Arial, sans-serif
+    padding: 0
+
+  &_input
+    border-bottom: 1px solid #cfcfcf
+
+#add_field, button[type="submit"]
+  width: 350px
+  appearance: none
+  border: 1px solid #cfcfcf
+  box-shadow: none
+  border-radius: 0
+  font: 14px/16px Arial, sans-serif
+  padding: 8px 12px
+  background-color: transparent
+  transition: background-color 0.3s ease
+  box-sizing: border-box
+
+.to-do__label
+  margin: auto !important
+  width: auto
+
+button[type="submit"]
+  width: auto
+  cursor: pointer
+
+  &:hover
+    background-color: #e1d8de
